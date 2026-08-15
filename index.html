@@ -2,7 +2,7 @@
 <div class="wrap">
 <header class="top">
 <h1 class="title">Formula Student Germany <span>2026</span></h1>
-<div class="stamp"><span class="dot"></span>updated 15 Aug 2026, 07:44:46</div>
+<div class="stamp"><span class="dot"></span>updated 15 Aug 2026, 07:59:45</div>
 </header>
 <nav class="tabs" role="tablist">
 <button role="tab" data-k="overall" aria-selected="false" aria-controls="p-overall">Overall</button>
@@ -1285,10 +1285,22 @@ tbody td{padding:9px 12px;border-bottom:1px solid var(--line-soft);vertical-alig
 tbody tr:last-child td{border-bottom:0}
 tbody tr:hover td{background:var(--sunken)}
 .num{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
-.pos{font-family:var(--mono);font-variant-numeric:tabular-nums;color:var(--ink-3);width:44px}
+.pos{font-family:var(--mono);font-variant-numeric:tabular-nums;color:var(--ink-3);
+  width:46px;min-width:46px;padding-left:10px;padding-right:6px}
 tr.podium .pos{color:var(--lead);font-weight:700}
 tr.podium .team{font-weight:650}
-.car{font-family:var(--mono);font-weight:600;color:var(--accent);width:56px}
+.car{font-family:var(--mono);font-weight:600;color:var(--accent);
+  width:58px;min-width:58px;padding-left:8px}
+
+/* These tables are wider than a phone, so they scroll sideways - and scrolling
+   right used to leave anonymous columns of numbers with no rank or car to read
+   them against. Pin the two identity columns so they travel with the numbers. */
+thead th.pos,tbody td.pos{position:sticky;left:0;z-index:2}
+thead th.car,tbody td.car{position:sticky;left:46px;z-index:2;
+  box-shadow:1px 0 0 var(--line-soft)}
+tbody td.pos,tbody td.car{background:var(--panel)}
+thead th.pos,thead th.car{z-index:3;background:var(--sunken)}
+tbody tr:hover td.pos,tbody tr:hover td.car{background:var(--sunken)}
 .team{min-width:210px}
 .team small{display:block;color:var(--ink-3);font-size:11.5px;
   overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:34ch}
