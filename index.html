@@ -2,7 +2,7 @@
 <div class="wrap">
 <header class="top">
 <h1 class="title">Formula Student Germany <span>2026</span></h1>
-<div class="stamp"><span class="dot"></span>updated 15 Aug 2026, 19:40:10</div>
+<div class="stamp"><span class="dot"></span>updated 16 Aug 2026, 09:30:43</div>
 </header>
 <nav class="tabs" role="tablist">
 <button role="tab" data-k="overall" aria-selected="false" aria-controls="p-overall">Overall</button>
@@ -1291,13 +1291,19 @@
 <div class="tiles">
 <div class="tile leader"><div class="k">Leader</div><div class="v">&mdash;</div><div class="s">no times yet</div></div>
 <div class="tile"><div class="k">Fastest total</div><div class="v">&mdash;</div><div class="s">sum of counted laps</div></div>
-<div class="tile"><div class="k">Teams scored</div><div class="v">0</div><div class="s">of 0 entered</div></div>
+<div class="tile"><div class="k">Teams scored</div><div class="v">0</div><div class="s">of 6 entered</div></div>
 <div class="tile"><div class="k">Points available</div><div class="v">250</div><div class="s">by time</div></div>
 </div>
 <div class="tbar"><span class="ordernote" data-role="ordernote">Fastest first</span><button class="toggle" type="button" data-role="reverse" aria-pressed="false" data-desc="Slowest first" data-asc="Fastest first" data-note-desc="Fastest first" data-note-asc="Slowest first"><svg class="arrow" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M19 12l-7 7-7-7"/></svg><span data-role="label">Slowest first</span></button></div>
 <div class="scroller"><table><thead><tr>
 <th class="pos">Pos</th><th class="car">Car</th><th class="cc">CNT</th><th class="team">Team</th><th class="num">Total time</th><th class="num">Cones</th><th class="num">Laps</th><th class="pts">Points</th>
 </tr></thead><tbody>
+<tr class="row out"><td class="pos" data-pos="&mdash;">&mdash;</td><td class="car">13</td><td class="cc">CH</td><td class="team">Valais Wallis Racing Team<small>Sion HES</small></td><td class="num"><span class="chip running">LAP 2</span></td><td class="num cones zero">&mdash;</td><td class="num">2</td><td class="pts"><div class="ptsline"><span class="ptsval">0.00</span><span class="track"></span></div></td></tr>
+<tr class="row out"><td class="pos" data-pos="&mdash;">&mdash;</td><td class="car">29</td><td class="cc">DE</td><td class="team">Elefant Racing e.V.<small>Bayreuth U</small></td><td class="num"><span class="chip running">LAP 7</span></td><td class="num cones zero">&mdash;</td><td class="num">7</td><td class="pts"><div class="ptsline"><span class="ptsval">0.00</span><span class="track"></span></div></td></tr>
+<tr class="row out"><td class="pos" data-pos="&mdash;">&mdash;</td><td class="car">43</td><td class="cc">BE</td><td class="team">VUB Racing<small>Brussels VUB</small></td><td class="num"><span class="chip running">LAP 4</span></td><td class="num cones zero">&mdash;</td><td class="num">4</td><td class="pts"><div class="ptsline"><span class="ptsval">0.00</span><span class="track"></span></div></td></tr>
+<tr class="row out"><td class="pos" data-pos="&mdash;">&mdash;</td><td class="car">150</td><td class="cc">DE</td><td class="team">Seagulls Luebeck<small>Lübeck TH</small></td><td class="num"><span class="chip running">LAP 9</span></td><td class="num cones zero">&mdash;</td><td class="num">9</td><td class="pts"><div class="ptsline"><span class="ptsval">0.00</span><span class="track"></span></div></td></tr>
+<tr class="row out"><td class="pos" data-pos="&mdash;">&mdash;</td><td class="car">250</td><td class="cc">US</td><td class="team">UW Formula Motorsports<small>Seattle U Washington</small></td><td class="num"><span class="chip running">LAP 7</span></td><td class="num cones zero">&mdash;</td><td class="num">7</td><td class="pts"><div class="ptsline"><span class="ptsval">0.00</span><span class="track"></span></div></td></tr>
+<tr class="row out"><td class="pos" data-pos="&mdash;">&mdash;</td><td class="car">343</td><td class="cc">DE</td><td class="team">Bodensee Racing Team<small>Konstanz UAS</small></td><td class="num"><span class="chip running">LAP 9</span></td><td class="num cones zero">&mdash;</td><td class="num">9</td><td class="pts"><div class="ptsline"><span class="ptsval">0.00</span><span class="track"></span></div></td></tr>
 </tbody></table></div>
 <p class="meta">0 scored &middot; TMax = 1.5 x fastest &middot; PMax 250 / PMin 25</p>
 </section>
@@ -1440,6 +1446,9 @@ tr.out .car{color:var(--ink-3)}
   font-weight:700;letter-spacing:.04em;border:1px solid currentColor}
 .chip.dnf{color:var(--bad)}
 .chip.dq{color:var(--bad);background:color-mix(in srgb,var(--bad) 16%,transparent)}
+.chip.running{color:var(--accent);background:color-mix(in srgb,var(--accent) 14%,transparent)}
+sup.est{margin-left:3px;font-size:9px;font-weight:700;letter-spacing:.04em;
+  color:var(--lead);vertical-align:super;cursor:help}
 td.cones{color:var(--lead);white-space:nowrap}
 td.cones small{margin-left:5px;font-size:10.5px;opacity:.72}
 td.cones.zero{color:var(--ink-3)}
